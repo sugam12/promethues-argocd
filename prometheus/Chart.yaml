@@ -32,7 +32,7 @@ keywords:
 - prometheus
 kubeVersion: '>=1.19.0-0'
 maintainers:
-- email: gianrubio@gmail.com
+- email: sugamachr@gmail.com
   name: gianrubio
 - email: zanhsieh@gmail.com
   name: zanhsieh
