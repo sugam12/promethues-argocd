@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: prometheus # app name
+  namespace: argocd # namespace 
+spec:
+  destination:
+    server: https://kubernetes.default.svc # same cluster 
+    namespace: monitoring1 # prometheus namespace, this should exists as namespace in kubernetes
+  source:
+    repoURL: https://github.com/sugam12/promethues-argocd # folder or namespace of github
+    path: prometheus # package of git where the helm charts are present
+    targetRevision: HEAD
+  project: default
+  syncPolicy: 
+    automated:
+      prune: true
+      selfHeal: true
