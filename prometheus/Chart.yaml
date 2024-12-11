@@ -24,7 +24,7 @@ dependencies:
   name: prometheus-pushgateway
   repository: https://prometheus-community.github.io/helm-charts
   version: 2.15.*
-description: Prometheus is a monitoring system and time series database.
+description: Prometheus is a monitoring system and time series database used by sugam for first time.
 home: https://prometheus.io/
 icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
 keywords:
@@ -32,7 +32,7 @@ keywords:
 - prometheus
 kubeVersion: '>=1.19.0-0'
 maintainers:
-- email: sugamachr@gmail.com
+- email: gianrubio@gmail.com
   name: gianrubio
 - email: zanhsieh@gmail.com
   name: zanhsieh
